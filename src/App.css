@@ -1,38 +1,122 @@
-.App {
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Garamond";
+  max-width: 100%;
+}
+
+/*Containers*/
+
+.filterMenu {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10%;
+  background-color: rgb(20, 19, 19);
+  box-shadow: black;
+}
+
+.pageLink {
+  text-decoration: "none";
+}
+
+.cardsContent {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(20, 19, 19),
+    rgb(246, 248, 246)
+  );
+  height: 100%;
+}
+
+.addContent {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.placeHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10%;
+}
+
+.placeHolderImage {
+  width: 40%;
+  height: 40%;
+}
+
+/* Nav Bar */
+
+.leftNav {
+  padding: 0 10px;
+  font-size: 20;
+}
+
+/* Seperation Line*/
+
+/*Cards*/
+
+.imgCard {
+  size: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title {
+  font-size: calc(5px + 1vmin);
+  color: black;
+  text-align: center;
+  margin: 0% 0 0 0;
+}
+
+.subtitle {
+  font-size: calc(2px + 1vmin);
+  color: #b0215e;
+  margin: 0 0 0 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.comment {
+  text-align: center;
+  font-style: italic;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inner {
+  height: 30%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background: white;
+  box-sizing: border-box;
+  padding: 30px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  height: 30vh;
+  width: 20vw;
+  margin: 1vmin;
+  /* box-sizing: border-box; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  text-decoration: none;
+  border: 4px solid #b0215e;
+  border-radius: 10px;
+  background-size: cover;
 }
